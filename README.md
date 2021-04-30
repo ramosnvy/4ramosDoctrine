@@ -10,7 +10,7 @@ Doctrine ORM: Acesse o banco com Mapeamento Objeto-Relacional.
 
 Nesse primeiro dia de estudo adotamos uma convenção de negócios, em que as classes que representam as tabelas, devem ficar 
 dentro de uma pasta chamada "src". Dentro dela, criamos as configurações inicias do Doctrine, para que ele consiga se 
-conectar com o banco de dados, e com a classe configurada, podemos gerenciar as nossas classes/objetos.
+conectar com o banco de dados, e com a classe configurada podemos gerenciar as nossas classes/objetos.
 
 Colocamos o arquivo de configuração dentro de um pasta chamada "Helper". Nela, foi criada uma classe PHP chamada 
 EntityManagerFactory, essa classe é um gerenciador de entidades do Doctrine.
