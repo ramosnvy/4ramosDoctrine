@@ -29,6 +29,10 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
             'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Console\\' => 26,
         ),
+        'R' => 
+        array (
+            'Ramos\\Doctrine\\' => 15,
+        ),
         'P' => 
         array (
             'Psr\\Container\\' => 14,
@@ -47,10 +51,6 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
-        ),
-        'A' => 
-        array (
-            'Alura\\Doctrine\\' => 15,
         ),
     );
 
@@ -90,6 +90,10 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Ramos\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -144,10 +148,6 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
             1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
-        ),
-        'Alura\\Doctrine\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
