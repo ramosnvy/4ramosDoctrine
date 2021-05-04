@@ -47,7 +47,7 @@ final class Versions
   'doctrine/orm' => '2.8.4@a588555ecd837b8d7e89355d9a13902e54d529c7',
   'doctrine/persistence' => '2.1.0@9899c16934053880876b920a3b8b02ed2337ac1d',
   'psr/container' => '1.1.1@8622567409010282b7aeebe4bb841fe98b58dcaf',
-  'symfony/console' => 'v5.2.6@35f039df40a3b335ebf310f244cb242b3a83ac8d',
+  'symfony/console' => 'v5.2.7@90374b8ed059325b49a29b55b3f8bb4062c87629',
   'symfony/polyfill-ctype' => 'v1.22.1@c6c942b1ac76c82448322025e084cadc56048b4e',
   'symfony/polyfill-intl-grapheme' => 'v1.22.1@5601e09b69f26c1828b13b6bb87cb07cddba3170',
   'symfony/polyfill-intl-normalizer' => 'v1.22.1@43a0283138253ed1d48d352ab6d0bdb3f809f248',
@@ -56,7 +56,7 @@ final class Versions
   'symfony/polyfill-php80' => 'v1.22.1@dc3063ba22c2a1fd2f45ed856374d79114998f91',
   'symfony/service-contracts' => 'v2.4.0@f040a30e04b57fbcc9c6cbcf4dbaa96bd318b9bb',
   'symfony/string' => 'v5.2.6@ad0bd91bce2054103f5eaa18ebeba8d3bc2a0572',
-  '__root__' => 'dev-main@cc1f95706f0534c473b644dbfb89e66c531b54aa',
+  '__root__' => 'dev-main@b4178c75977fb5b281206d116c3b3fa63b67ec8d',
 );
 
     private function __construct()
