@@ -1,3 +1,4 @@
+
 ##Diário do Doctrine <h1>
 
 Salve primo!!
