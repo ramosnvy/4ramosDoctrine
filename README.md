@@ -1,5 +1,5 @@
 
-<h1> ##Diario de Bordo - Doctrine </h1>
+<h1> Diario de Bordo - Doctrine </h1>
                                    
 
 Salve primo!!
