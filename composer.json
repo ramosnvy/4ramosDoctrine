@@ -4,7 +4,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Ramos\\Doctrine\\": "src/"
+            "Ramos\\estudoDoctrine\\Helper\\": "src/Helper/",
+            "Ramos\\estudoDoctrine\\Entity\\": "src/Entity/"
         }
     }
 }

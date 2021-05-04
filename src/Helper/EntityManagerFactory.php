@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramos\Doctrine\Helper;
+namespace Ramos\estudoDoctrine\Helper;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
@@ -11,7 +11,7 @@ class EntityManagerFactory
 
     public function getEntityManager(): EntityManagerInterface
     {
-        $rootDir = __DIR__ . '/../..';
+        $rootDir = __DIR__ . '/../../';
         $config = Setup::createAnnotationMetadataConfiguration(
             [$rootDir . '/src'],
             true

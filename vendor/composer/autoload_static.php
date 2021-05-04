@@ -31,7 +31,8 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
         ),
         'R' => 
         array (
-            'Ramos\\Doctrine\\' => 15,
+            'Ramos\\estudoDoctrine\\Helper\\' => 28,
+            'Ramos\\estudoDoctrine\\Entity\\' => 28,
         ),
         'P' => 
         array (
@@ -91,9 +92,13 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Ramos\\Doctrine\\' => 
+        'Ramos\\estudoDoctrine\\Helper\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/src/Helper',
+        ),
+        'Ramos\\estudoDoctrine\\Entity\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Entity',
         ),
         'Psr\\Container\\' => 
         array (

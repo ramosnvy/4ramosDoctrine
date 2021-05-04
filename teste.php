@@ -2,10 +2,10 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Alura\Doctrine\Helper\EntityManagerFactory;
+
+use Ramos\estudoDoctrine\Helper\EntityManagerFactory;
 
 $entityManagerFactory = new EntityManagerFactory();
 
-$entityManager = $entityManagerFactory->getEntityManager();
-
-var_dump($entityManager-> getConnection());
+$entityManagerFactory = $entityManagerFactory->getEntityManager();
+var_dump($entityManagerFactory->getConnection());
