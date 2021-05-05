@@ -79,7 +79,7 @@ $nico = $alunoRepository->find(4);
 echo $nico->getNome();
 ~~~ 
 
-* ``findBy();`` - Podemos utilizar para buscar itens por outros utilizando outros atributos diferentes do ID, passando 
+* ``findBy();`` - Podemos utilizar para buscar itens utilizando atributos diferentes do ID, passando 
   como parâmetro os critérios de busca (filtros) em um array associativo. Como retorno temos um array com um índice.
   
 ~~~php 
@@ -89,7 +89,7 @@ $sergioLopes = $alunoRepository->findBy([
 var_dump($sergioLopes);
 ~~~
 
-* `findOneBy();` - Podemos utilizar para buscar itens por outros utilizando outros atributos diferentes do ID, passando
+* `findOneBy();` - Podemos utilizar para buscar itens utilizando atributos diferentes do ID, passando
   como parâmetro os critérios de busca (filtros) em um array associativo. Como retorno temos um objeto do tipo Aluno.
   
 ~~~ php 
@@ -130,4 +130,58 @@ $entityManager->flush();
 > quando criamos uma nova entidade, não foi necessário chamar o método persist. 
 > Como utilizamos o próprio Doctrine para buscar a entidade que foi atualizada, ela já estava sendo observada e gerenciada 
 > pelo Doctrine. Logo, quando fizemos as modificações em seus atributos, e chamamos o flush, o Doctrine pôde verificar 
-> que houve modificações, e as realizou no banco
+> que houve modificações, e as realizou no banco.
+
+<h2> Removendo um aluno </h2>
+
+Criamos um arquivo chamado **remove-aluno.php**, dentro dele realizei a adição do autoload e instaciei o gerenciador de
+entidades.
+
+~~~ php 
+<?php
+
+use Alura\Doctrine\Entity\Aluno;
+use Alura\Doctrine\Helper\EntityManagerFactory;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$entityManagerFactory = new EntityManagerFactory();
+$entityManager = $entityManagerFactory->getEntityManager();
+
+~~~ 
+
+Em seguida escolhemos por usar o `getReference();` como método para localizar o aluno que iria ser removido, assim séria 
+realizada uma query a menos para o banco de dados. Ele retorna uma nova entidade que possui o Atributo PK da entidade no 
+banco.
+
+Passamos esse resultado para o método `` remove ();`` de **$entityManager** e realizamos o envio apra o banco.
+
+~~~ php 
+<?php
+
+require_once  __DIR__ . '/../vendor/autoload.php';
+
+use Ramos\estudoDoctrine\Entity\Aluno;
+use Ramos\estudoDoctrine\Helper\EntityManagerFactory;
+
+$id = $argv[1];
+
+$entityManagerFactory = new EntityManagerFactory();
+$entityManager = $entityManagerFactory->getEntityManager();
+
+
+$aluno = $entityManager->getReference(Aluno::class, $id);
+
+$entityManager->remove($aluno);
+
+$entityManager->flush();
+~~~
+
+<h2> Final dia 3 - Conclusões </h2>
+
+Finalizei hoje a parte sobre CRUD (Create, Read, Update e Delete), uma das partes mais importantes para conseguir avançar sobre 
+bancos de dados e php. Ainda estou tirando algumas questões sobre o método `getReference();`, mas acredito que fique mais 
+claro com tempo.
+
+O professor falou bastante sobre a questão de performance, ainda não comecei estudor aprofundados sobre SQL, então acredito 
+que com o tempo essa parte de como realizar uma melhor performance fique mais clara.

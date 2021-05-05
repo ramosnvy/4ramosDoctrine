@@ -56,7 +56,7 @@ final class Versions
   'symfony/polyfill-php80' => 'v1.22.1@dc3063ba22c2a1fd2f45ed856374d79114998f91',
   'symfony/service-contracts' => 'v2.4.0@f040a30e04b57fbcc9c6cbcf4dbaa96bd318b9bb',
   'symfony/string' => 'v5.2.6@ad0bd91bce2054103f5eaa18ebeba8d3bc2a0572',
-  '__root__' => 'dev-main@b4178c75977fb5b281206d116c3b3fa63b67ec8d',
+  '__root__' => 'dev-main@f4c1475328fb0906580ad6508016f63cb5dd2349',
 );
 
     private function __construct()
