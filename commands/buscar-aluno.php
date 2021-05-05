@@ -3,6 +3,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Ramos\estudoDoctrine\Entity\Aluno;
+use Ramos\estudoDoctrine\Entity\Telefone;
 use Ramos\estudoDoctrine\Helper\EntityManagerFactory;
 
 
@@ -16,8 +17,15 @@ $alunoRepository = $entityManager->getRepository(Aluno::class);
  */
 $alunosList = $alunoRepository->findAll();
 
+foreach ($alunosList as $aluno) {
+    $telefones = $aluno
+        ->getTelefones()
+        ->map(function (Telefone $telefone){
+            return $telefone->getNumero();
+        })
+        ->toArray();
 
-  foreach ($alunosList as $aluno){
-    echo "ID: {$aluno->getId()}\n Nome:  {$aluno->getNome()} \n\n";
-  }
+    echo "ID: {$aluno->getId()}\nNome: {$aluno->getNome()}\n\n";
+    echo "Telefones: " . implode(',', $telefones);
+}
 

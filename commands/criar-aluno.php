@@ -3,6 +3,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Ramos\estudoDoctrine\Entity\Aluno;
+use Ramos\estudoDoctrine\Entity\Telefone;
 use Ramos\estudoDoctrine\Helper\EntityManagerFactory;
 
 
@@ -12,6 +13,11 @@ use Ramos\estudoDoctrine\Helper\EntityManagerFactory;
     $entityManagerFactory = new EntityManagerFactory();
     $entityManager = $entityManagerFactory->getEntityManager();
 
-    $entityManager->persist($aluno);
+    for($i = 2; $i < $argc; $i++ ){
+        $numeroTelefone = $argv[$i];
+        $telefone = new Telefone();
+        $telefone->setNumero($numeroTelefone);
+        $aluno->addTelefone($telefone);
+    }
 
     $entityManager->flush();
