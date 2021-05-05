@@ -130,4 +130,4 @@ $entityManager->flush();
 > quando criamos uma nova entidade, não foi necessário chamar o método persist. 
 > Como utilizamos o próprio Doctrine para buscar a entidade que foi atualizada, ela já estava sendo observada e gerenciada 
 > pelo Doctrine. Logo, quando fizemos as modificações em seus atributos, e chamamos o flush, o Doctrine pôde verificar 
-> que houve modificações, e as realizou no banco.
+> que houve modificações, e as realizou no banco
