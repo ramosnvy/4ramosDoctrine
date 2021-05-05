@@ -1,5 +1,5 @@
 
-## Dia 1 - Entendendo o Doctrine e criando a primeira conexão<h1>
+<h1> Dia 1 - Entendendo o Doctrine e criando a primeira conexão</h1>
 
 Nesse primeiro dia de estudo adotamos uma convenção de negócios, em que as classes que representam as tabelas, devem ficar
 dentro de uma pasta chamada "src". Dentro dela, criamos as configurações inicias do Doctrine, para que ele consiga se
@@ -154,13 +154,13 @@ var_dump($entityManager->getConnection());
 ~~~
 
 
-###Extra
+<h3> Extra </h3>
 
 Organização dos diretórios no fim do dia.
 
 ![](extras/diretorios.png)
 
-##Final do dia 1 - Conclusões<h2>
+<h2> Final do dia 1 - Conclusões</h2>
 
 Aprendi como criar conexões com o banco de dados e tambêm sobre as funcionalidades disponíveis dentro do Doctrine, acredito
 que seja algo extra, mas acabei aprendendo um pouco mais sobre Orientação aos objetos e algumas questões ficaram mais claras.

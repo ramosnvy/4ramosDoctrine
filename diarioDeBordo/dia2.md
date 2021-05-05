@@ -1,4 +1,4 @@
-## Dia 2 - Persistindo a primeira entidade. <h1>
+<h1> Dia 2 - Persistindo a primeira entidade. </h1>
 
 Essa aula foi totalmente dedicada a como realizar o rastreio da classe, explicando para o Doctrine por anotações, 
 como deve ser lida cada classe.
@@ -98,7 +98,7 @@ e organizar os objetos do banco de dados. Para criar, devemos ir ao terminal e r
 ```vendor\bin\doctrine orm:schema-tool:create ```, esse é um dos milhares de comandos presentes no Doctrine. 
 
 
-## Realizando a adição dos primeiros Alunos.<h2>
+<h2> Realizando a adição dos primeiros Alunos.</h2>
 
 Para isso foi criado uma pasta chamada ```Commands```, onde irão ficar guardadas execuções de criação ou coisas 
 relacionadas ao banco.crie o arquivo criar-aluno.php. Neste arquivo, receba, por parâmetro na linha de comando, 
@@ -134,7 +134,7 @@ Nesse código é possível ver a presença de dois novos métodos, ```persist();
 que todas as informações devem ser enviadas e atualizadas/guardadas pelo banco.
   
 
-## Final dia 2 - Conclusões <h3>
+<h2> Final dia 2 - Conclusões </h2>
 
 Foi um dia que não encontrei problemas dentro do estudo, tudo ainda parece claro e tranquilo. Acredito ter conseguido 
 tomar as melhores notas possíveis. 

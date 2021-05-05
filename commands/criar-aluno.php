@@ -7,13 +7,11 @@ use Ramos\estudoDoctrine\Helper\EntityManagerFactory;
 
 
    $aluno = new Aluno();
-   $aluno->setNome('Pedro Ramos');
+   $aluno->setNome($argv[1]);
 
     $entityManagerFactory = new EntityManagerFactory();
     $entityManager = $entityManagerFactory->getEntityManager();
 
     $entityManager->persist($aluno);
-
-    $aluno->setNome('Pedro Augusto Ramos');
 
     $entityManager->flush();
