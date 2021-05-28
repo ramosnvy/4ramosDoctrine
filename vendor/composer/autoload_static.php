@@ -34,6 +34,7 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
         ),
         'R' => 
         array (
+            'Ramos\\estudoDoctrine\\Repository\\' => 32,
             'Ramos\\estudoDoctrine\\Helper\\' => 28,
             'Ramos\\estudoDoctrine\\Entity\\' => 28,
         ),
@@ -110,6 +111,10 @@ class ComposerStaticInit97de3084acd35392715e5c7c09de2458
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Ramos\\estudoDoctrine\\Repository\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Repository',
         ),
         'Ramos\\estudoDoctrine\\Helper\\' => 
         array (

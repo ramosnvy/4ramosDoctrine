@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Ramos\\estudoDoctrine\\Helper\\": "src/Helper/",
-            "Ramos\\estudoDoctrine\\Entity\\": "src/Entity/"
+            "Ramos\\estudoDoctrine\\Entity\\": "src/Entity/",
+            "Ramos\\estudoDoctrine\\Repository\\": "src/Repository"
         }
     }
 }

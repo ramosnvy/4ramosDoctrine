@@ -17,6 +17,7 @@ return array(
     'Symfony\\Component\\Stopwatch\\' => array($vendorDir . '/symfony/stopwatch'),
     'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
+    'Ramos\\estudoDoctrine\\Repository\\' => array($baseDir . '/src/Repository'),
     'Ramos\\estudoDoctrine\\Helper\\' => array($baseDir . '/src/Helper'),
     'Ramos\\estudoDoctrine\\Entity\\' => array($baseDir . '/src/Entity'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
