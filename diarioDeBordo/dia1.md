@@ -169,5 +169,4 @@ Tive problemas com o autoload e finalizei o dia um pouco mais cedo, busquei ajud
 
 
 
->***Ainda irei adicionar informações sobre namespaces e autoload.***
 
