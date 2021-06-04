@@ -28,7 +28,7 @@ php commands\criar-aluno.php "Sergio Lopes
 
 ~~~
 
-<h2> Buscando alunos </h2>>
+<h2> Buscando alunos </h2>
 
 O Doctrine fornece acesso a features como repositórios. Se no banco existe uma tabela Aluno, vamos ter um repositório de 
 Aluno.

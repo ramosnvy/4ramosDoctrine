@@ -29,3 +29,15 @@ Uma documentação básica sobre o conteúdo fornecido pelo curso de Doctrine da
 3. [O que é CRUD?](listasRdme/crud/introducao-crud.md)
 
 4. [Create](listasRdme/crud/adicionar-dados.md)
+
+5. [Read](listasRdme/crud/lendo-dados.md)
+
+6. [Update](listasRdme/crud/atualizando-dados.md)
+
+7. [Delete](listasRdme/crud/apagando-dados.md)
+
+<h3> Relacionamentos </h3>
+
+1. OneToMany - **Em construção**
+2. ManyToMany - **Em construção**
+
